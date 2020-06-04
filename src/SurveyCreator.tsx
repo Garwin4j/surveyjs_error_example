@@ -9,7 +9,7 @@ import "select2/dist/css/select2.css";
 import "bootstrap-slider/dist/css/bootstrap-slider.css";
 
 import "jquery-bar-rating/dist/themes/css-stars.css";
-import { json}  from './survey_json';
+import { json } from './survey_json';
 
 import $ from "jquery";
 import "jquery-ui/ui/widgets/datepicker.js";
@@ -48,7 +48,7 @@ function onComplete(result: any) {
 }
 
 export function SurveyPage() {
-  var model = new Survey.SurveyModel(json);
+  var model = new Survey["Model"](json);
   return (
     <div className="container">
       <h2>SurveyJS Library - a sample survey below</h2>
